@@ -1,0 +1,138 @@
+.table:deep() {
+  max-width: 100%;
+  box-shadow: none;
+  // height: calc(100vh - 188px);
+  max-height: calc(100vh - 188px);
+
+  th {
+    color: #718096;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+  }
+
+  thead {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  td {
+    height: 80px;
+  }
+
+  td {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1a202c;
+  }
+
+  .td {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &__icon {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+    }
+
+    &__box {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+
+    &__btn {
+      display: block;
+      margin: 0 auto;
+      padding: 10px;
+      border: 1px solid #EDF2F7;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s;
+      width: 40px;
+      height: 40px;
+
+      &:hover {
+        background-color: #F6F5FF;
+      }
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+
+    }
+  }
+
+  .notice {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: #FF4747;
+      border-radius: 50%;
+      right: -4px;
+      top: -4px;
+    }
+  }
+
+  .date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+
+    &__title {
+      color: #1a202c;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.2px;
+    }
+
+    &__text {
+      color: #718096;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  // Bottom Pagination
+  .pagination {
+    margin-left: auto;
+    padding: 5px 0 0 5px;
+
+    .q-pagination__middle {
+      gap: 5px;
+    }
+
+    .q-btn {
+      height: 35px;
+      width: 35px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+    border-radius: 0px;
+  }
+}

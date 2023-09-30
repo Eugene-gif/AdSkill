@@ -1,0 +1,90 @@
+.textarea-box {
+  max-width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  margin-bottom: 24px;
+
+  .input-box__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .input-box__icon {
+    width: 19px;
+    height: 19px;
+  }
+
+  .input-box__name {
+    font-weight: 800;
+    color: #718096;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+  }
+
+  .textarea {
+    resize: none;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    border-radius: 16px;
+    transition: border-color 0.36s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.36s;
+
+    &:hover {
+      border-color: #1A202C;
+    }
+
+    &:focus,
+    .textarea:active {
+      transition: all 0.36s;
+      outline-color: var(--blue);
+    }
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    margin: 12px 0;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+}
+
+.--error {
+
+  .input-box__name {
+    color: #ff4747;
+  }
+
+  .input-box__error {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .textarea {
+    border: 1px solid #ff4747;
+
+    &:hover {
+      border-color: #ff4747;
+    }
+
+    &:focus,
+    .textarea:active {
+      outline-color: transparent;
+      outline: 1px solid #ff4747;
+    }
+  }
+}

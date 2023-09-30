@@ -1,0 +1,18 @@
+stages:
+  - deploy
+
+variables:
+  SERVICE_NAME: client
+  DEPLOY_DIR: as-deploy
+
+test-script:
+  stage: deploy
+  tags:
+    - development
+  rules:
+    - if: $CI_COMMIT_BRANCH == "develop"
+  script:
+    - cd ~/$DEPLOY_DIR
+    - make upd-$SERVICE_NAME
+    - cd sources/as-client
+    - git reset --hard

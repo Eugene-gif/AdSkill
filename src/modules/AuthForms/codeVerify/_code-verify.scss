@@ -1,0 +1,66 @@
+.dialog {
+  position: fixed;
+  background-color: #1a202c;
+  background: url("/img/pictures/verify-bg.webp") 100% 60% / cover
+    no-repeat;
+
+  &__wrapper {
+    background-color: #fff;
+    max-width: 510px;
+    width: 100%;
+    padding: 40px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    margin-bottom: 16px;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #718096;
+  }
+
+  &__email {
+    color: #1a202c;
+  }
+}
+
+.content {
+  margin-bottom: 40px;
+}
+
+.footer {
+  &__button {
+    margin-bottom: 24px;
+  }
+
+  &__timer {
+    @extend .dialog__subtitle;
+    text-align: center;
+  }
+
+  &__time {
+    color: #1a202c;
+    font-weight: 800;
+  }
+}
+
+.dialog.error:deep() {
+  input {
+    border: 1px solid #FF4747;
+  }
+}

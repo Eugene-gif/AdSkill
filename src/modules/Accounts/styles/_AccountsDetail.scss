@@ -1,0 +1,141 @@
+.btn-back {
+  background-color: transparent;
+  color: #09121f;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  border: 1px solid #718096;
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+.block__card {
+  margin-bottom: 40px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 55px 30px 55px 55px;
+  background: linear-gradient(
+    160deg,
+    var(--blue) -50%,
+    var(--dark) 50%
+  );
+  border-radius: 16px;
+  color: #fff;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  &__img {
+    width: 108px;
+    height: 108px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      border-radius: 50%;
+      object-fit: contain;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__data-title {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 42px;
+    margin-bottom: 15px;
+  }
+
+  &__data-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__data-name {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    color: #dedee3;
+  }
+
+  &__data-value {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    white-space: nowrap;
+    display: flex;
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__btn {
+    color: #fff;
+  }
+}
+
+:deep(.table) {
+  max-width: 100%;
+  box-shadow: none;
+  height: calc(100vh - 516px);
+
+  th {
+    color: #718096;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 24px;
+  }
+
+  thead {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  td {
+    height: 80px;
+  }
+
+  td:not(td:nth-of-type(5n)) {
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1a202c;
+  }
+
+  td:nth-of-type(5n) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+  .table__btn {
+    background-color: transparent;
+    color: #1a202c;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #edf2f7;
+    border-radius: 8px;
+
+    &:hover {
+      background-color: #edf2f7;
+    }
+  }
+}

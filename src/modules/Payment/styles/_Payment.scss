@@ -1,0 +1,15 @@
+.payment {
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+
+  &__list {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  &__table {
+    height: calc(100vh - 360px);
+  }
+}

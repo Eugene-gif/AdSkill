@@ -1,0 +1,24 @@
+.message:deep() {
+
+  .q-message-name {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    color: #1a202c;
+  }
+
+  .q-message-text {
+    padding: 16px;
+    border-radius: 16px 16px 16px 16px;
+    white-space: pre;
+  }
+
+  .q-message-text:last-child:before {
+    display: none;
+  }
+
+  .q-message-stamp {
+    color: #a0aec0;
+  }
+}

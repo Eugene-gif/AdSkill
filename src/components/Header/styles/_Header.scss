@@ -1,0 +1,101 @@
+.header:deep() {
+  height: 108px;
+  padding: 0 40px;
+  background: linear-gradient(270deg, #194bfb -15%, #1a202c 25%);
+  gap: 5px;
+
+  .title {
+    font-size: 24px;
+    line-height: 31px;
+    font-weight: 800;
+  }
+
+  .box {
+    width: 630px;
+    gap: 16px;
+  }
+
+  .rate {
+    background-color: #fff;
+    color: var(--dark);
+    border-radius: 23px;
+    height: 48px;
+
+    &__el {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      & span:nth-child(1) {
+        color: var(--grey2);
+      }
+    }
+
+    &__btn {
+      border-radius: 23px;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 21px;
+      height: 40px;
+    }
+  }
+
+  .notice {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .user {
+    gap: 15px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 23px;
+
+    &__img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+
+    &__name {
+      color: var(--dark);
+      font-weight: 800;
+      line-height: 24px;
+      font-size: 16px;
+      cursor: pointer;
+      max-width: 120px;
+      overflow: hidden;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &__drop {
+      .q-btn-dropdown .q-btn__content {
+        .q-icon {
+          font-size: 0;
+        }
+
+        .q-icon::before {
+          content: "expand_more";
+          position: absolute;
+          top: 0;
+          left: 0;
+          font-size: 20px;
+          color: #718096;
+        }
+      }
+    }
+  }
+
+  .q-layout__shadow::after {
+    box-shadow: none;
+  }
+}

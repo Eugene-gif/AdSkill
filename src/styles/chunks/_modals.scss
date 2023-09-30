@@ -1,0 +1,33 @@
+.dialog {
+  &__wrapper {
+    background-color: #fff;
+    max-width: 447px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 24px;
+  }
+
+  &__header {
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 24px;
+  }
+
+  &__close.q-btn {
+    background-color: transparent;
+    border-radius: 12px;
+    font-weight: 800;
+    height: 40px;
+    width: 40px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 0px;
+}

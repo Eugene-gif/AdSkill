@@ -1,0 +1,114 @@
+.card-form:deep() {
+
+  max-width: 427px;
+  width: 100%;
+
+  & .title {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 800;
+  }
+
+  & .text-grey {
+    color: var(--grey);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .error-block {
+    background-color: #FFF7F5;
+    border: 1px solid #FF4747;
+    border-radius: 4px;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    padding: 5px;
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 100%;
+  }
+
+  & .input {
+    border-radius: 10px;
+    height: 56px;
+    font-size: 24px;
+
+    .q-field__bottom--animated {
+      color: #FF4747;
+      transform: translateY(-40px) translateX(-10px);
+      font-weight: 800;
+      font-size: 14px;
+
+      .q-field__messages div {
+        position: relative;
+
+        &:after {
+          content: url('/img/icons/pen-err.svg');
+          position: absolute;
+          bottom: 0;
+          right: -20px;
+        }
+      }
+    }
+  }
+
+  & .input .q-field__control {
+    color: var(--blue);
+    border-radius: 12px;
+    padding: -5px 16px;
+  }
+
+  & .input .q-field__control::before {
+    border-radius: 12px;
+    border-color: var(--border-grey);
+  }
+
+  & .input .q-field__label {
+    color: var(--grey1);
+  }
+
+  & .q-btn.btn {
+    border-radius: 12px;
+    font-weight: 800;
+    height: 56px;
+  }
+
+  & .fs16 {
+    font-size: 16px;
+
+    a {
+      text-decoration: none;
+      font-weight: 800;
+      color: #000;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.card-form-footer:deep() {
+  a {
+    text-decoration: none;
+    color: var(--grey2);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.wrapper__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}

@@ -1,0 +1,55 @@
+:deep(.drawer-menu) {
+
+  background: url('/img/pictures/drawer-bg.png') 100% 60%/cover no-repeat;
+  padding-right: 12px;
+
+  .drawer-menu__logo {
+    margin-top: 37px;
+    margin-bottom: 33px;
+  }
+
+  .line {
+    background-color: #2C364B;
+    height: 1px;
+    max-width: 202px;
+    width: 100%;
+  }
+
+  .q-list {
+    height: calc(100vh - 160px);
+    overflow-y: auto;
+    padding-right: 12px;
+
+    .q-item {
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      border-radius: 10px;
+
+      &:not(._active):hover {
+        background-color: var(--blue);
+        opacity: .5;
+      }
+
+      &._active {
+        background-color: var(--blue);
+        opacity: 1;
+      }
+
+      &__section.q-item__section--avatar {
+        padding-right: 0;
+        min-width: 15px;
+        width: 35px;
+      }
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  border-radius: 0px;
+  background-color: transparent;
+  scrollbar-width: thin;
+}

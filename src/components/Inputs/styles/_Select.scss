@@ -1,0 +1,87 @@
+.select:deep() {
+  font-size: 16px;
+  margin-bottom: 24px;
+
+  .select {
+    &__header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__name {
+      font-weight: 800;
+      color: #718096;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.2px;
+      margin-bottom: 10px;
+    }
+
+    &__icon {
+      width: 19px;
+      height: 19px;
+    }
+  }
+
+  .q-field {
+
+    input {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      padding: 8px 0 6px 0;
+    }
+
+    
+    &--outlined .q-field__control::before {
+      border-radius: 12px;
+    }
+    
+    &--outlined .q-field__control::after {
+      border-radius: 12px;
+    }
+    
+    &__control {
+      color: var(--blue);
+    }
+
+    &__native {
+      font-size: 16px;
+      font-weight: 500;
+    }
+    
+    &__control,
+    &__native,
+    &__marginal {
+      height: 48px;
+      min-height: 48px;
+    }
+    
+    &__native {
+      overflow-y: auto;
+    }
+
+    &__bottom {
+      padding: 5px 0 0 0;
+    }
+
+    &--with-bottom {
+      padding: 0;
+    }
+  }
+
+  .q-select__dropdown-icon {
+    font-size: 24px;
+    color: transparent;
+    background-color: transparent;
+
+    &::before {
+      content: "expand_more";
+      position: absolute;
+      left: -12px;
+      transform: translateX(50%);
+      font-size: 24px;
+      color: #718096;
+    }
+  }
+}

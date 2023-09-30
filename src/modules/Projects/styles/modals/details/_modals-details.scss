@@ -1,0 +1,59 @@
+.dialog {
+
+  &__wrapper {
+    overflow-x: hidden;
+    max-height: 95vh;
+  }
+
+  &__header {
+    position: relative;
+    padding-bottom: 16px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #EDF2F7;
+      height: 1px;
+      width: 450px;
+      bottom: 0;
+      left: -24px;
+    }
+  }
+
+  &__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+.content {
+
+  &__input {
+    margin-bottom: 15px;
+  }
+
+  &__title {
+    position: relative;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    padding-bottom: 12px;
+    margin-bottom: 21px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #EDF2F7;
+      height: 1px;
+      width: 450px;
+      bottom: 0;
+      left: -24px;
+    }
+  }
+
+  &__files {
+    margin-bottom: 30px;
+  }
+}

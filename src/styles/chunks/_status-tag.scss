@@ -1,0 +1,212 @@
+.status-tag {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #808080;
+  background-color: rgba(128, 128, 128, 0.5);
+  cursor: default;
+
+  &::first-letter {
+    text-transform: uppercase;
+  }
+
+  &--frozen {
+    @extend .status-tag;
+    color: #718096;
+    background-color: #ECECEC;
+  }
+
+  &--success {
+    @extend .status-tag;
+    color: #22c55e;
+    background-color: #f6fdf9;
+  }
+
+  &--done {
+    @extend .status-tag;
+    color: #22c55e;
+    background-color: #f6fdf9;
+  }
+
+  &--Active {
+    @extend .status-tag;
+    color: #22c55e;
+    background-color: #f6fdf9;
+  }
+
+  &--Waiting.for.registration {
+    @extend .status-tag;
+    color: #22c55e;
+    background-color: #f6fdf9;
+  }
+
+  &--Payment.confirmed {
+    @extend .status-tag;
+    color: #22c55e;
+    background-color: #f6fdf9;
+  }
+
+  &--approved {
+    @extend .status-tag;
+    color: #22c55e;
+    background-color: #f6fdf9;
+  }
+
+  &--pending {
+    @extend .status-tag;
+    color: #FACC15;
+    background-color: #FEFAE6;
+  }
+
+  &--Pending {
+    @extend .status-tag;
+    color: #FACC15;
+    background-color: #FEFAE6;
+  }
+
+  &--Awaiting_moderation {
+    @extend .status-tag;
+    color: #FACC15;
+    background-color: #FEFAE6;
+  }
+
+  &--Awaiting.moderation {
+    @extend .status-tag;
+    color: #FACC15;
+    background-color: #FEFAE6;
+  }
+
+  &--onediting {
+    @extend .status-tag;
+    color: #FACC15;
+    background-color: #FEFAE6;
+  }
+
+  &--Editing.required {
+    @extend .status-tag;
+    color: #FACC15;
+    background-color: #FEFAE6;
+  }
+
+  &--denied {
+    @extend .status-tag;
+    color: #FF784B;
+    background-color: #FFF7F5;
+  }
+
+  &--Request.rejected {
+    @extend .status-tag;
+    color: #FF784B;
+    background-color: #FFF7F5;
+  }
+
+  &--inprogress {
+    @extend .status-tag;
+    color: #194bfb;
+    background-color: #F6F5FF;
+  }
+
+  &--calculated {
+    @extend .status-tag;
+    color: #9747FF;
+    background-color: #FDF6FC;
+  }
+}
+
+.status-tab {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 5px;
+    right: 5px;
+    border-radius: 50%
+  }
+
+  &--pending {
+    @extend .status-tab;
+
+    &::after {
+      background-color: #FACC15;
+    }
+  }
+
+  &--success {
+    @extend .status-tab;
+
+    &::after {
+      background-color: #22c55e;
+    }
+  }
+
+  &--approved {
+    @extend .status-tab;
+
+    &::after {
+      background-color: #22c55e;
+    }
+  }
+
+  &--denied {
+    @extend .status-tab;
+
+    &::after {
+      background-color: #FF784B;
+    }
+  }
+
+  &--inprogress {
+    @extend .status-tab;
+
+    &::after {
+      background-color: #194bfb;
+    }
+  }
+
+  &--Awaiting_moderation {
+    @extend .status-tab;
+
+    &::after {
+      background-color: #FACC15;
+    }
+  }
+
+  &--Pending {
+    @extend .status-tab;
+
+    &::after {
+      background-color: #FACC15;
+    }
+  }
+
+  &--onediting {
+    @extend .status-tab;
+
+    &::after {
+      background-color: #FACC15;
+    }
+
+  }
+  
+  &--Active {
+    @extend .status-tab;
+
+    &::after {
+      background-color: #22c55e;
+    }
+  }
+}

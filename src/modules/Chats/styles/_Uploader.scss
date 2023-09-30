@@ -1,0 +1,43 @@
+.q-uploader:deep() {
+  box-shadow: none;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: auto;
+  height: 48px;
+  overflow: hidden;
+
+  .q-uploader__header {
+    padding: 4px 4px;
+    width: auto;
+    height: 48px;
+    background-color: transparent;
+  }
+
+  // _____ List card _____
+  .q-uploader__list {
+
+    padding: 0;
+  }
+
+  .q-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .q-item {
+    border: 1px solid #7180963c;
+    border-radius: 8px;
+    padding: 3px;
+    max-height: 48px;
+    max-width: 160px;
+
+    .text {
+      max-width: 100px;
+    }
+  }
+
+  // _____ /List card _____
+
+}

@@ -1,0 +1,136 @@
+// .chats {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 15px;
+// }
+
+:deep() {
+  // display: flex;
+  // flex-direction: column;
+  // gap: 15px;
+  // border-bottom: 1px solid #E2E8F0;
+  // border-radius: 12px;
+  // overflow: hidden;
+
+  .q-item {
+    padding: 0;
+  }
+
+  .q-item__section--side {
+    color: #09121F;
+    font-size: 30px;
+  }
+
+  .chat {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-bottom: 1px solid #EDF2F7;
+
+    &__img {
+      .q-img {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+        min-height: 60px;
+        border-radius: 50%;
+      }
+    }
+
+    .--notification {
+      position: relative;
+
+      &__number{
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        background-color: var(--blue);
+        color: #fff;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        z-index: 1;
+        font-size: 10px;
+        font-weight: 800;
+        letter-spacing: 0.4px;
+        text-align: center;
+        padding: 5px 2px 2px 2px;
+      }
+    }
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    &__box--name {
+      @extend .chat__box;
+      min-width: 180px;
+      width: 180px;
+      cursor: default;
+    }
+
+    &__box--date {
+      @extend .chat__box;
+      min-width: 190px;
+      width: 190px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    &__box--btns {
+      @extend .chat__box;
+      flex-direction: row;
+      gap: 10px;
+    }
+
+    &__name {
+      color: #1A202C;
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      max-width: 180px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    &__section {
+      color: #1A202C;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0.2px;
+    }
+
+    &__time {
+      @extend .chat__section;
+      color: #718096;
+    }
+
+    &__date {
+      @extend .chat__section;
+    }
+
+    &__section {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0.2px;
+    }
+
+    // @media(max-width: 1200px) {
+    //   &__box--date {
+    //     max-width: 100%;
+    //     min-width: none;
+    //     width: auto;
+    //     flex-direction: column;
+    //   }
+    // }
+  }
+}

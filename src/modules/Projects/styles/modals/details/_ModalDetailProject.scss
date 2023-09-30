@@ -1,0 +1,145 @@
+:deep(.content__files) {
+  .q-carousel {
+    background-color: transparent;
+
+    &__slide {
+      padding: 5px;
+    }
+
+    &__slide div {
+      gap: 5px;
+    }
+
+    &__slide .q-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+    }
+
+    &__control .q-btn {
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border: 1px solid #e2e8f0;
+    }
+
+    &__next-arrow .q-btn {
+      right: -15px;
+    }
+
+    &__prev-arrow .q-btn {
+      left: -15px;
+    }
+  }
+}
+
+:deep() {
+  .tabs-status {
+
+    .q-tabs {
+      &__content {
+        gap: 10px;
+        height: 48px;
+      }
+    }
+
+    .q-tab {
+      color: transparent;
+      max-width: 48px;
+      max-height: 48px;
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+
+      &__content {
+        border-radius: 50%;
+        min-width: 48px;
+        min-height: 48px;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+
+        img {
+          border-radius: 50%;
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      &__label {
+        font-size: 0;
+      }
+
+      &__indicator {
+        display: none;
+      }
+
+      &--active .q-tab__content {
+        transform: scale(1);
+        cursor: default;
+      }
+
+      &--inactive .q-tab__content {
+        transform: scale(0.8);
+      }
+
+      // _____ Circle statuses _____
+      &--inactive.status-tab--denied {
+        &::after {
+          transform: scale(0.8);
+        }
+      }
+
+      &--inactive.status-tab--pending {
+        &::after {
+          transform: scale(0.8);
+        }
+      }
+
+      &--inactive.status-tab--inprogress {
+        &::after {
+          transform: scale(0.8);
+        }
+      }
+
+      &--inactive.status-tab--success {
+        &::after {
+          transform: scale(0.8);
+        }
+      }
+
+      &--active.status-tab--denied {
+        &::after {
+          transform: scale(1);
+        }
+      }
+
+      &--active.status-tab--pending {
+        &::after {
+          transform: scale(1);
+        }
+      }
+
+      &--active.status-tab--inprogress {
+        &::after {
+          transform: scale(1);
+        }
+      }
+
+      &--active.status-tab--success {
+        &::after {
+          transform: scale(1);
+        }
+      }
+
+      // _____ /Circle statuses _____
+    }
+  }
+
+  .tabs-status-panel {
+    margin-bottom: 30px;
+  }
+}

@@ -1,0 +1,109 @@
+.content {
+
+  &__wrapper {
+    margin: 0 auto 32px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    margin-bottom: 32px;
+  }
+
+  &__account {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 40px;
+    letter-spacing: 0.2px;
+    margin-bottom: 8px;
+  }
+
+  &__profile {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #718096;
+    margin-bottom: 15px;
+  }
+
+  &__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  &__client {
+    margin-bottom: 70px;
+  }
+
+  &__data-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+.client {
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+
+  &__job {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__description-title {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #718096;
+  }
+
+  &__description-text {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+  }
+}

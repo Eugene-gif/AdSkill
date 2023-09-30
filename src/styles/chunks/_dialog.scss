@@ -1,0 +1,78 @@
+@import "@/styles/chunks/_btn.scss";
+
+.dialog {
+  &__wrapper {
+    background-color: #fff;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+  }
+
+  .header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 16px 20px;
+
+    &__title {
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 24px;
+    }
+
+    &__close.q-btn {
+      background-color: transparent;
+      border-radius: 12px;
+      font-weight: 800;
+      height: 40px;
+      width: 40px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #EDF2F7;
+      height: 1px;
+      width: calc(100% + 40px);
+      bottom: 0;
+      left: -20px;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 20px 0;
+    margin: 20px 8px 20px 0;
+
+    &__wrapper {
+      padding-left: 20px;
+      margin-right: 8px;
+    }
+  }
+
+  .footer {
+    position: relative;
+    padding: 16px 20px 20px 20px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #EDF2F7;
+      height: 1px;
+      width: calc(100% + 40px);
+      top: 0;
+      left: -20px;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}

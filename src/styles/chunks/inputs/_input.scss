@@ -1,0 +1,28 @@
+:deep() {
+
+  .q-field {
+    &--outlined .q-field__control::before {
+      border-radius: 12px;
+    }
+
+    &--outlined .q-field__control::after {
+      border-radius: 12px;
+    }
+
+    &__control {
+      color: #194bfb;
+    }
+
+    &__control-container {
+
+      .q-field__native:-webkit-autofill+.q-field__label,
+      .q-field__input:-webkit-autofill+.q-field__label {
+        transform: translateY(-60%) scale(0.75);
+      }
+    }
+  }
+
+  .q-field--float .q-field__label {
+    transform: translateY(-60%) scale(0.75);
+  }
+}

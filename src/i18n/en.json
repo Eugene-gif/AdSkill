@@ -1,0 +1,49 @@
+{
+  "drawer": {
+    "dashboard": "Dashboard",
+    "payment": "Payment",
+    "projects": "Projects",
+    "accounts": "Accounts",
+    "account": "Account",
+    "moderation": "Moderation",
+    "info": "Info",
+    "creatives": "Creatives",
+    "mediabuying": "Mediabuying",
+    "profile": "Profile",
+    "chats": "Chats",
+    "clients": "Clients",
+    "chat": "Chat"
+  },
+
+  "header": {
+    "deposit": "Deposit",
+    "buttonLogOut": "Log out"
+  },
+
+  "profile": {
+    "personalInfo": "Personal Informations",
+    "changePasswordTitle": "Change password",
+    "contractTitle": "Contracts",
+    "socialTitle": "Social",
+
+    "buttons": {
+      "imageUpload": "Upload new picture",
+      "saveButton": "Save",
+      "savePasswordButton": "Save password",
+      "deleteButton": "Delete"
+    },
+
+    "inputs": {
+      "company": "Company",
+      "name": "Your name",
+      "country": "Country",
+      "phone": "Phone number",
+      "email": "E-mail",
+      "jobTitle": "Job title",
+      "password": "New password",
+      "repeatPassword": "Repeat password",
+      "messenger": "Messenger",
+      "messengerLogin": "Login"
+    }
+  }
+}

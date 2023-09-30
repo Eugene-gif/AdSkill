@@ -1,0 +1,49 @@
+.text-data {
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    align-self: flex-start;
+  }
+
+  &__title-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+  }
+
+  &__title-text {
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    color: #718096;
+  }
+
+  &__value {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #1a202c;
+    max-width: 250px;
+    text-align: right;
+    word-wrap: break-word;
+  }
+
+}
+
+.text-data__box.wrap {
+  flex-direction: column;
+  gap: 5px;
+
+  .text-data__value {
+    max-width: max-content;
+    text-align: left;
+  }
+}

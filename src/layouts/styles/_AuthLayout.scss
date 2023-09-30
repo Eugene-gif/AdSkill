@@ -1,0 +1,68 @@
+.form-box:deep() {
+  height: calc(100vh - 48px);
+
+  & .box1 {
+    padding: 60px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+
+    background: url("/img/pictures/auth-bg.png") 100% 100%/cover no-repeat;
+
+    .box__logo {
+      max-width: 202px;
+      max-height: 34px;
+    }
+
+    .box__img {
+      max-width: 570px;
+      max-height: 581px;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+
+    .slogan {
+      max-width: 570px;
+      color: #fff;
+      margin-bottom: 100px;
+    }
+
+    .title {
+      margin-bottom: 20px;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 1.1;
+    }
+
+    .text {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.5;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  & .box2 {
+    padding: 24px 48px;
+
+    @media (max-width: 1068px) {
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .form-box:deep() {
+    & .box1 {
+      display: none;
+    }
+
+    & .box2 {
+      padding: 0;
+      width: 100%;
+    }
+  }
+}

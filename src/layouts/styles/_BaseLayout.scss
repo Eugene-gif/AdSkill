@@ -1,0 +1,22 @@
+.q-layout:deep() {
+  .q-page-container {
+    background-color: var(--dark);
+  }
+
+  .page-wrapper {
+    border-top-left-radius: 40px;
+    overflow: hidden;
+    height: calc(100vh - 108px);
+    padding-right: 15px;
+    background-color: #fff;
+  }
+
+  .page {
+    padding: 40px 15px 20px 40px;
+    background-color: #fff;
+    height: inherit;
+    overflow: auto;
+    position: relative;
+    height: 100%;
+  }
+}

@@ -1,0 +1,55 @@
+.dialog {
+
+  &__wrapper {
+    max-width: 1080px;
+  }
+}
+
+:deep() .slider {
+
+  .q-carousel__slide {
+    text-align: center;
+  }
+
+  .content__img {
+    border-radius: 12px;
+    background-color: #E2E8F0;
+    border: 1px solid #E2E8F0;
+    max-height: calc(100vh - 200px);
+    height: 100%;
+    width: 100%;
+  }
+
+  .q-carousel {
+
+    &__control {
+      color: transparent;
+    }
+
+    &__arrow {
+
+      .q-btn {
+        border: 1px solid #EDF2F7;
+        border-radius: 8px;
+        background-color: white;
+        color: #000;
+        height: 40px;
+        width: 40px;
+      }
+    }
+
+    &__prev-arrow {
+      left: 40px;
+    }
+
+    &__next-arrow {
+      right: 40px;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  border-radius: 0px;
+}

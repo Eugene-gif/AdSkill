@@ -1,0 +1,47 @@
+:deep() {
+
+  .input-search {
+    position: relative;
+
+    &::before {
+      content: url("/img/icons/search.svg");
+      position: absolute;
+      font-size: 14px;
+      width: 30px;
+      height: 30px;
+      left: 10px;
+      top: 17px;
+    }
+
+
+    .q-field {
+      &--outlined .q-field__control::before {
+        border-radius: 12px;
+        border: 1px solid #A0AEC0;
+      }
+
+      &--outlined .q-field__control::after {
+        border-radius: 12px;
+      }
+
+      &__control {
+        color: #194bfb;
+      }
+
+      &__native {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        padding-left: 35px;
+
+        &::-webkit-input-placeholder {
+          color: #A0AEC0;
+        }
+
+        &::-moz-placeholder {
+          color: #A0AEC0;
+        }
+      }
+    }
+  }
+}

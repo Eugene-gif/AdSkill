@@ -1,0 +1,147 @@
+.drop:deep() {
+
+  max-height: 200px;
+  width: 100%;
+
+  .q-uploader {
+    width: 100%;
+    max-height: 100%;
+    box-shadow: none;
+    border-radius: 12px;
+
+    &__header {
+      height: 190px;
+      border: 1px solid #edf2f7;
+      border-radius: 12px;
+      background-color: transparent;
+    }
+
+    &__title,
+    .q-uploader__subtitle,
+    .q-uploader__list {
+      display: none;
+    }
+  }
+
+  .item {
+    display: flex;
+    gap: 10px;
+    padding: 5px 0;
+
+    &__img {
+      order: -1;
+    }
+
+    &__delete {
+      display: flex;
+      align-items: center;
+    }
+
+    &__delete-btn {
+      background-color: white;
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  // _____ Carousel _____ 
+
+  .q-panel-parent {
+    overflow: visible;
+  }
+
+  .q-carousel {
+    max-height: 190px;
+
+    &__slide {
+      padding-top: 0;
+      padding: 5px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+      }
+    }
+
+    &__navigation-inner {
+      display: none;
+    }
+
+    &__arrow {
+      top: 20%;
+
+      .q-btn {
+        z-index: 10;
+        border: 1px solid #EDF2F7;
+        background: #1a1a1a;
+      }
+    }
+
+    &__prev-arrow {
+      left: -20px;
+    }
+
+    &__next-arrow {
+      right: -20px;
+    }
+
+    &__control {
+      display: flex;
+      align-items: center;
+      top: 0;
+      left: 0;
+      margin: 0;
+
+      .btn {
+        z-index: 1;
+
+        .q-btn {
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+      .btn__prev {
+        left: -20px;
+        margin-right: auto;
+      }
+
+      .btn__next {
+        margin-left: auto;
+      }
+    }
+
+    .q-carousel__control.absolute.absolute-bottom-right {
+      margin: 0 !important;
+    }
+
+    &.shadow-1 {
+      box-shadow: none;
+    }
+  }
+
+
+
+  // _____ /Carousel _____
+}
+
+.drop__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 200px;
+  height: 100%;
+  text-align: center;
+
+  .drop__gradient-text {
+    background-color: #2AA5A0;
+    background-image: linear-gradient(90deg, #194BFB, #00E675);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

@@ -1,0 +1,189 @@
+@import "@/styles/chunks/inputs/_input-search.scss";
+@import "@/styles/chunks/inputs/_input.scss";
+
+.drawer {
+  &__wrapper {
+    background-color: #fff;
+    min-width: 200px;
+    max-width: 500px;
+    width: 100vw;
+    height: 100%;
+    padding: 24px 16px 32px 32px;
+    border-radius: 0;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  &__header {
+    position: relative;
+    padding-bottom: 12px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-color: #EDF2F7;
+      height: 1px;
+      width: 500px;
+      bottom: 0;
+      left: -32px;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+  }
+
+  &__close.q-btn {
+    background-color: transparent;
+    border-radius: 12px;
+    font-weight: 800;
+    height: 40px;
+    width: 40px;
+  }
+
+  &__content {
+    height: calc(100vh - 176px);
+    overflow: auto;
+    padding-top: 56px;
+    padding-right: 16px;
+  }
+
+  .content:deep() {
+
+    .filter {
+      border-bottom: 1px solid #EDF2F7;
+
+      .q-item,
+      .q-item__section {
+        padding: 0;
+      }
+
+      &__header-text {
+        margin: 0;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 800;
+        letter-spacing: 0.2px;
+      }
+
+      .q-item {
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      &__content {
+        padding: 10px 0 18px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .input-search {
+        margin-bottom: 20px;
+      }
+
+      .text {
+        font-weight: 600;
+        line-height: 1;
+        font-size: 18px;
+        margin: 5px;
+      }
+    }
+
+    // _____ calendar _____
+    .q-date {
+      width: 100%;
+      box-shadow: none;
+      background: #1A202C;
+      color: #EDF2F7;
+      border-radius: 12px;
+
+      &__header {
+        height: auto;
+        padding: 10px 15px 5px 15px;
+        background-color: #1A202C;
+      }
+
+      &__view {
+        min-height: 150px;
+      }
+
+      &__calendar-days-container {
+        min-height: 150px;
+      }
+    }
+
+    // _____ range-slider _____
+    .range {
+      margin: 0 15px 0 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .q-slider {
+
+        &__track {
+          color: var(--blue);
+        }
+
+        &__thumb {
+          color: var(--blue);
+          width: 28px !important;
+          height: 28px !important;
+        }
+      }
+
+      &__fields {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &__field {
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        color: #718096;
+
+        input {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .content__footer {
+      display: flex;
+      gap: 10px;
+      @import '@/styles/chunks/_btn.scss';
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+  border-radius: 0px;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #EDF2F7;
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: lightblue;
+}

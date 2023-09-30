@@ -1,0 +1,41 @@
+:deep() {
+  .input-box {
+    &__header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__name {
+      font-weight: 800;
+      color: #718096;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.2px;
+      margin-bottom: 10px;
+    }
+
+    &__icon {
+      img {
+        width: 18px;
+        height: 18px;
+      }
+    }
+
+    .q-field {
+
+      // height: 40px;
+      &--outlined .q-field__control::before {
+        border-radius: 12px;
+      }
+
+      &--outlined .q-field__control::after {
+        border-radius: 12px;
+      }
+
+      &__control {
+        height: 48px;
+        color: #194bfb;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.title {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 32px;
+}
+
+.text-1 {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+.text-2 {
+  @extend .text-1;
+  font-size: 16px;
+}
+
+.white {
+  color: #fff;
+}
+
+.black {
+  color: var(--dark);
+}
+
+.grey {
+  color: var(--grey2);
+}

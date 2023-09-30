@@ -1,0 +1,49 @@
+{
+  "drawer": {
+    "dashboard": "Панель управления",
+    "payment": "Платежи",
+    "projects": "Проекты",
+    "accounts": "Аккаунты",
+    "account": "Аккаунт",
+    "moderation": "Модерация",
+    "info": "Информация",
+    "creatives": "Креативы",
+    "mediabuying": "Продвижение",
+    "profile": "Профиль",
+    "clients": "Клиенты",
+    "chats": "Чаты",
+    "chat": "Чат"
+  },
+
+  "header": {
+    "deposit": "Внести",
+    "buttonLogOut": "Выйти"
+  },
+
+  "profile": {
+    "personalInfo": "Персональная информация",
+    "changePasswordTitle": "Сменить пароль",
+    "contractTitle": "Документы",
+    "socialTitle": "Соц. сети",
+
+    "buttons": {
+      "imageUpload": "Загрузить новое фото",
+      "saveButton": "Сохранить",
+      "savePasswordButton": "Сохранить пароль",
+      "deleteButton": "Удалить"
+    },
+
+    "inputs": {
+      "company": "Компания",
+      "name": "Ваше имя",
+      "country": "Страна",
+      "phone": "Номер телефона",
+      "email": "E-mail",
+      "jobTitle": "Должность",
+      "password": "Новый пароль",
+      "repeatPassword": "Повторите пароль",
+      "messenger": "Мессенджеры",
+      "messengerLogin": "Логин"
+    }
+  }
+}

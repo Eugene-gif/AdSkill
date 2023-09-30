@@ -1,0 +1,119 @@
+.input-box:deep() {
+  margin-bottom: 24px;
+  line-height: 1;
+
+  .input-box {
+    &__header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__name {
+      font-weight: 800;
+      color: #718096;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.2px;
+      margin-bottom: 10px;
+    }
+
+    &__icon {
+      width: 19px;
+      height: 19px;
+      cursor: pointer;
+
+      img {
+        width: 18px;
+        height: 18px;
+      }
+
+      &.--clue {
+        cursor: default;
+      }
+    }
+
+    &__text {
+      color: #194bfb;
+      font-size: 14px;
+      font-weight: 800;
+      line-height: 1.5;
+      letter-spacing: 0.2px;
+      cursor: pointer;
+    }
+
+    &__error {
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+
+  .q-field {
+
+    input {
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      padding: 8px 0 6px 0;
+
+    }
+
+    &--outlined .q-field__control::before {
+      border-radius: 12px;
+    }
+
+    &--outlined .q-field__control::after {
+      border-radius: 12px;
+    }
+
+    &__control {
+      color: var(--blue);
+    }
+
+    &__control,
+    &__native,
+    &__marginal {
+      height: 48px;
+      min-height: 48px;
+    }
+
+    &__bottom {
+      padding: 5px 0 0 0;
+    }
+
+    &--with-bottom {
+      padding: 0;
+    }
+  }
+
+  .--search {
+    .q-field__control {
+      height: 52px;
+    }
+
+    .q-field__marginal {
+      height: 52px;
+      font-size: 24px;
+    }
+  }
+}
+
+/* _____ Error for input _____ */
+.--error:deep(.q-field--outlined .q-field__control:before) {
+  border: 1px solid #ff4747;
+}
+
+.--error {
+  .input-box__name {
+    color: #ff4747;
+  }
+
+  .input-box__field:deep() {
+    .q-field__control {
+      color: #ff4747;
+    }
+  }
+}
+
+/* _____ /Error for input _____ */

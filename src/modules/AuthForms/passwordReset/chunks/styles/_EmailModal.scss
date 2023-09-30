@@ -1,0 +1,32 @@
+.dialog:deep() {
+  min-width: 300px;
+  max-width: 500px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 20px;
+  background-color: #fff;
+  .dialog__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dialog__close {
+    margin-left: auto;
+  }
+
+  .dialog__title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .dialog__input {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .q-field--labeled .q-field__native {
+    line-height: 1;
+    padding-bottom: 10px;
+  }
+}

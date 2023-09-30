@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "platform": "Facebook",
+    "status": "success",
+    "agency": "Agency_1",
+    "date": "17.04.2021",
+    "url": "www.facebook/agency_1.com",
+    "image": "facebook",
+    "balance": "150",
+    "spend": "200",
+    "left": "350"
+  },
+  {
+    "id": 2,
+    "platform": "Instagram",
+    "status": "pending",
+    "agency": "Agency_2",
+    "date": "18.05.2021",
+    "url": "www.instagram/agency_2.com",
+    "image": "instagram",
+    "balance": "250",
+    "spend": "300",
+    "left": "450"
+  },
+  {
+    "id": 3,
+    "platform": "VK",
+    "status": "denied",
+    "agency": "Agency_3",
+    "date": "19.06.2021",
+    "url": "www.vk/agency_3.com",
+    "image": "vk",
+    "balance": "350",
+    "spend": "400",
+    "left": "650"
+  },
+  {
+    "id": 4,
+    "platform": "Yandex Zen",
+    "status": "calculated",
+    "agency": "Agency_4",
+    "date": "20.07.2022",
+    "url": "www.yandex/agency_4.com",
+    "image": "yandex",
+    "balance": "350",
+    "spend": "400",
+    "left": "850"
+  },
+  {
+    "id": 5,
+    "platform": "Twitch",
+    "status": "success",
+    "agency": "Agency_5",
+    "date": "22.02.2023",
+    "url": "www.twitch/agency_5.com",
+    "image": "twitch",
+    "balance": "350",
+    "spend": "500",
+    "left": "850"
+  },
+  {
+    "id": 6,
+    "platform": "AdSkill",
+    "status": "success",
+    "agency": "Agency_6",
+    "date": "14.04.2023",
+    "url": "www.adskill/agency_6.com",
+    "image": "adskill",
+    "balance": "750",
+    "spend": "800",
+    "left": "950"
+  }
+]

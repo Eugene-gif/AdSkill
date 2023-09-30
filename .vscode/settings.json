@@ -1,0 +1,9 @@
+{
+    "editor.detectIndentation": false,
+    "editor.tabSize": 2,
+    "vetur.format.options.tabSize": 4,
+    "beautify.options": {},
+    "editor.fontSize": 14,
+    "editor.wordWrapColumn": 70,
+    "prettier.singleAttributePerLine": true,
+}
